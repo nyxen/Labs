@@ -1,0 +1,39 @@
+# ============ Java (IntelliJ) ============
+out/
+.idea/
+*.iml
+*.class
+*.jar
+
+# ============ C# (Visual Studio) ============
+bin/
+obj/
+.vs/
+*.user
+*.suo
+packages/
+
+# ============ C++ / Qt ============
+build-*/
+build/
+*.pro.user
+*.pro.user.*
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+.qmake.stash
+Makefile
+Makefile.*
+*.autosave
+
+# ============ OS / IDE ============
+.DS_Store
+Thumbs.db
+.vscode/
