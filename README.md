@@ -1,70 +1,35 @@
-\# Лабораторная работа №1
+# Лабораторная работа №1
 
+**Задание:** по заданным `a1`, `d`, `n` найти n-й член арифметической прогрессии и сумму n членов.
 
+## Формулы
 
-\*\*Задание:\*\* по заданным `a1`, `d`, `n` найти n-й член арифметической прогрессии и сумму n членов.
+- n-й член: `an = a1 + (n − 1) · d`
+- Сумма n членов: `Sn = n · (2a1 + (n − 1) · d) / 2`
 
-
-
-Формулы:
-
-\- `an = a1 + (n − 1) · d`
-
-\- `Sn = n · (2a1 + (n − 1) · d) / 2`
-
-
-
-\## Реализации
-
-
+## Реализации
 
 | Язык | Технология | Папка |
-
 |---|---|---|
+| Java | Swing (JFrame) | [`Java/`](Java/) |
+| C# | Windows Forms | [`CSharp/`](CSharp/) |
+| C++ | Qt Widgets | [`CppQt/`](CppQt/) |
 
-| Java | Swing (JFrame) | \[`Java/`](Java/) |
+## Как запускать
 
-| C# | Windows Forms | \[`CSharp/`](CSharp/) |
+### Java
+1. Открыть папку `Java/` в IntelliJ IDEA.
+2. Открыть `Main.java`.
+3. Нажать `Shift+F10`.
 
-| C++ | Qt Widgets | \[`CppQt/`](CppQt/) |
+### C#
+1. Открыть `CSharp/WinFormsApp1.csproj` в Visual Studio.
+2. Нажать `F5`.
 
+### C++ (Qt)
+1. Открыть `CppQt/ArithmeticProgression.pro` в Qt Creator.
+2. Нажать `Ctrl+R`.
 
+## Пример работы
 
-\## Как запускать
-
-
-
-\### Java
-
-1\. Открыть `Java/` в IntelliJ IDEA.
-
-2\. Открыть `src/Main.java`.
-
-3\. Запустить `Shift+F10`.
-
-
-
-\### C#
-
-1\. Открыть `CSharp/Lab1WinForms.sln` в Visual Studio.
-
-2\. Нажать `F5`.
-
-
-
-\### C++ (Qt)
-
-1\. Открыть `CppQt/\*.pro` в Qt Creator.
-
-2\. Нажать `Ctrl+R`.
-
-
-
-\## Пример
-
-
-
-Ввод: `a1 = 2`, `d = 3`, `n = 5`
-
-Результат: `a\_n = 14.0000`, `S\_n = 40.0000`
-
+Ввод:
