@@ -21,7 +21,7 @@ namespace WinFormsApp2
 
         private void OnA1EditingFinished()
         {
-            if (!double.TryParse(txtA1.Text, NumberStyles.Float,
+            if (!double.TryParse(txtA1.Text.Replace(',', '), NumberStyles.Float,
                                  CultureInfo.InvariantCulture, out _))
             {
                 MessageBox.Show(this, "a1 должно быть числом.", "Ошибка ввода",
@@ -34,7 +34,7 @@ namespace WinFormsApp2
 
         private void OnDEditingFinished()
         {
-            if (!double.TryParse(txtD.Text, NumberStyles.Float,
+            if (!double.TryParse(txtD.Text.Replace(',', '), NumberStyles.Float,
                                  CultureInfo.InvariantCulture, out _))
             {
                 MessageBox.Show(this, "d должно быть числом.", "Ошибка ввода",
@@ -61,9 +61,9 @@ namespace WinFormsApp2
 
         private void TryCalculate()
         {
-            if (!double.TryParse(txtA1.Text, NumberStyles.Float,
+            if (!double.TryParse(txtA1.Text.Replace(',', '), NumberStyles.Float,
                                  CultureInfo.InvariantCulture, out double a1)) return;
-            if (!double.TryParse(txtD.Text, NumberStyles.Float,
+            if (!double.TryParse(txtD.Text.Replace(',', '), NumberStyles.Float,
                                  CultureInfo.InvariantCulture, out double d)) return;
             if (!int.TryParse(txtN.Text, out int n) || n <= 0) return;
 
