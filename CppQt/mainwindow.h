@@ -11,8 +11,11 @@ public:
 explicit MainWindow(QWidget *parent = 0);
 ~MainWindow();
 public slots:
-void Calculate();
+void onA1EditingFinished();
+void onDEditingFinished();
+void onNEditingFinished();
 private:
+void tryCalculate();
 Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H

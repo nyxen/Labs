@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Вычеслить</string>
+     <string>Выход</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="LeA1">
@@ -143,7 +143,7 @@
    <sender>pushButton</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>Calculate()</slot>
+   <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>136</x>
@@ -158,6 +158,6 @@
  </connections>
  <slots>
   <signal>clicked()</signal>
-  <slot>Calculate()</slot>
+  <slot>close()</slot>
  </slots>
 </ui>
